@@ -7,16 +7,18 @@ public class InventoryManager : MonoBehaviour
     public InventorySlot[] inventorySlots;
     public GameObject inventoryItemPrefab;
 
-    public void AddItem(Item item)
+    public bool AddItem(Item item)
     {
         foreach (InventorySlot slot in inventorySlots)
         {
             if (slot.GetComponentInChildren<InventoryItem>() == null)
             {
                 SpawnItem(item, slot);
-                return;
+                return true;
             }
         }
+        Debug.Log("Inventory is full, but still trying to add item");
+        return false;
     }
 
     void SpawnItem(Item item, InventorySlot slot)

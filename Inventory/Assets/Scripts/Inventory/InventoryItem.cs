@@ -8,13 +8,21 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     [Header("UI")]
     public Image image;
+    public Text countText;
+
     [HideInInspector] public Item item;
+    [HideInInspector] public int count = 1;
     [HideInInspector] public Transform parentAfterDrag;
 
-    public void InitializeItem(Item newItem)
+    public void InitializeItem(Item newItem) // 目前UI只接收贴图
     {
         item = newItem;
         image.sprite = newItem.image;
+        RefreshCount();
+    }
+    public void RefreshCount()
+    {
+        countText.text = count.ToString();
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
