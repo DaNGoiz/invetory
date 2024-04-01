@@ -14,4 +14,22 @@ public class DemoAddItem : MonoBehaviour
     {
         inventoryManager.AddItem(itemsToPickUp[index]);
     }
+
+    public void GetSelectedItem()
+    {
+        Item receivedItem = inventoryManager.GetSelectedItem(false);
+        if (receivedItem != null)
+            Debug.Log(receivedItem.name);
+        else
+            Debug.Log("No item selected");
+    }
+
+    public void UseSelectedItem()
+    {
+        Item receivedItem = inventoryManager.GetSelectedItem(true);
+        if (receivedItem != null)
+            Debug.Log(receivedItem.name);
+        else
+            Debug.Log("No item selected");
+    }
 }
