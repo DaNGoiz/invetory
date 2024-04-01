@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   actionType: 1
+  maxStack: 20
   size: {x: 5, y: 4}
   image: {fileID: -572424806, guid: 6af96558da2a54ffe973f80926090a65, type: 3}
-  stackable: 0
+  stackable: 1

@@ -8,6 +8,7 @@ public class Item : ScriptableObject
     [Header("Gameplay")]
     public ItemType type;
     public ActionType actionType;
+    public int maxStack = 20;
     public Vector2Int size = new Vector2Int(5, 4);
 
     [Header("UI")]

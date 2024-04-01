@@ -9,6 +9,22 @@ public class InventoryManager : MonoBehaviour
 
     public bool AddItem(Item item)
     {
+        // find stackable
+        foreach (InventorySlot slot in inventorySlots)
+        {
+            InventoryItem inventoryItem = slot.GetComponentInChildren<InventoryItem>();
+            if (inventoryItem != null &&
+                inventoryItem.item == item &&
+                item.stackable &&
+                inventoryItem.count < item.maxStack)
+            {
+                inventoryItem.count++;
+                inventoryItem.RefreshCount();
+                return true;
+            }
+        }
+
+        // find empty
         foreach (InventorySlot slot in inventorySlots)
         {
             if (slot.GetComponentInChildren<InventoryItem>() == null)
