@@ -181,8 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      inventorySlot (1)_1: -405015474
       inventorySlot (1)_0: 600920572
+      inventorySlot (1)_1: -405015474
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

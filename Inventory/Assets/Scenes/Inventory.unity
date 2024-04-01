@@ -464,8 +464,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: ad6ad57f2b8c4ea47b2abe4559d4a986, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -812,6 +812,51 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
   m_PrefabInstance: {fileID: 450938287}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &492404569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492404571}
+  - component: {fileID: 492404572}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492404571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492404569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 794.2762, y: 286.59875, z: -4.9835587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492404572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492404569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceda97a64ed1b42cfabe64d884038be1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySlots: []
 --- !u!1001 &498709344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1127,7 +1172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (6)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
@@ -1568,8 +1613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 41.903778}
-  m_SizeDelta: {x: 411.0302, y: 164.2275}
+  m_AnchoredPosition: {x: -0.00001049, y: 43.3}
+  m_SizeDelta: {x: 418.1727, y: 164.2275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &818125983
 MonoBehaviour:
@@ -1615,8 +1660,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: ad6ad57f2b8c4ea47b2abe4559d4a986, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2458,7 +2503,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (5)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
@@ -2662,7 +2707,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (4)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
@@ -2866,7 +2911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (7)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
@@ -2968,7 +3013,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (3)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
@@ -3490,7 +3535,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (1)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
@@ -4102,7 +4147,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4319428210523345748, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Name
-      value: Slot (2)
+      value: Slot
       objectReference: {fileID: 0}
     - target: {fileID: 4319428210523345749, guid: b32301ad8962b419eb910246e2cf6172, type: 3}
       propertyPath: m_Pivot.x
