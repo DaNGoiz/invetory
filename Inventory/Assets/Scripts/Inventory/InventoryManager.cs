@@ -5,6 +5,8 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public InventorySlot[] inventorySlots;
+    public GameObject inventoryItemPrefab;
+
     public void AddItem(Item item)
     {
         foreach (InventorySlot slot in inventorySlots)
@@ -19,6 +21,8 @@ public class InventoryManager : MonoBehaviour
 
     void SpawnItem(Item item, InventorySlot slot)
     {
-        // Spawn item in the world
+        GameObject newItem = Instantiate(inventoryItemPrefab, slot.transform);
+        InventoryItem inventoryItem = newItem.GetComponent<InventoryItem>();
+        inventoryItem.InitializeItem(item);
     }
 }

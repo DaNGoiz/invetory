@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec515650e7b64485d982c7d41a79255c, type: 3}
-  m_Name: Mining tool
+  m_Name: Apple
   m_EditorClassIdentifier: 
-  type: 2
-  actionType: 0
+  type: 0
+  actionType: 1
   size: {x: 5, y: 4}
   image: {fileID: 562230753, guid: 6af96558da2a54ffe973f80926090a65, type: 3}
   stackable: 0
