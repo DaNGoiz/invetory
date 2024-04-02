@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IDropHandler
+public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
 {
     public Image image;
     public Color selectedColor, normalColor;
@@ -32,5 +32,10 @@ public class InventorySlot : MonoBehaviour, IDropHandler
             item.parentAfterDrag = transform;
             item.transform.SetParent(transform);
         }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        
     }
 }
