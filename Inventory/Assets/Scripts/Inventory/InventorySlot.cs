@@ -8,6 +8,8 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
 {
     public Image image;
     public Color selectedColor, normalColor;
+    public int index;
+    public bool isInventorySlot;
 
     // public void Awake()
     // {
@@ -36,6 +38,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        
+        if (isInventorySlot)
+            Messenger.Broadcast<int>(MsgType.MouseSelectSlotIndex, index);
     }
 }

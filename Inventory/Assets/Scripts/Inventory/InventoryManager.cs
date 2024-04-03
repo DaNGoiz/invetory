@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
     private void Start()
     {
         ChangeSelectedSlot(0);
+        Messenger.AddListener<int>(MsgType.MouseSelectSlotIndex, ChangeSelectedSlot);
     }
 
     private void Update()
