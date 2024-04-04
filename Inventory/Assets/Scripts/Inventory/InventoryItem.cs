@@ -42,7 +42,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         image.raycastTarget = true;
         transform.SetParent(parentAfterDrag);
-        if (parentAfterDrag.GetComponent<InventorySlot>().isInventorySlot)
-            Messenger.Broadcast<int>(MsgType.MouseSelectSlotIndex, parentAfterDrag.GetComponent<InventorySlot>().index);
+        // if (parentAfterDrag.GetComponent<InventorySlot>().isInventorySlot)
+        //     Messenger.Broadcast<int>(MsgType.MouseSelectSlotIndex, parentAfterDrag.GetComponent<InventorySlot>().index);
     }
 }
